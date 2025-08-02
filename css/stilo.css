@@ -1,25 +1,33 @@
 :root{
-    --cor1: #ffd6f0;
-    --cor2: #e0d9f6;
-    --cor3: #6ecbf5;
-    --cor4: #c252e1;
-    --cor5: #586ae2;
-    --cor6: #2a2556;
-    --cor7: #fdf500;
-    --cor8: #41fb3e;
+    --cor1: #fe0096;
+    --cor2: #ffcd00;
+    --cor3: #d3fc72;
+    --cor4: #2d0464;
+    --roxo: #553199;
+    --cor5: #0d002c;
+    --withe: #f1ffe7;
+    --black: #353535;
 }
 
 * {
     margin: 0px;
 }
+body {
+    background-color: var(--black);
+}
+
 li, a {
     list-style: none;
     text-decoration: none;
-    color: var(--cor2);
+    color: var(--withe);
+}
+a:hover {
+    color: var(--cor1);
 }
 
 header {
     background-color: var(--cor4);
+    border-bottom: 10px double var(--cor3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,12 +54,14 @@ header img{
     gap: 20px;
 }
 
-/*~~~~~*/
+/*~~~ <main> ~~*/
 #conteudo {
     margin: 90px;
-    padding: 50px;
-    background-color: var(--cor2);
-    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--withe);
+    border-radius: 5px;
+    border-right: 10px double var(--cor1);
+    border-bottom: 10px groove var(--cor4);
 }
 /* ~~~~~~~~~~~~~ seção da empresa ~~~~~~~~~~*/
 #secao_empresa {
@@ -64,24 +74,29 @@ header img{
 #secao_empresa img{
     height: 270px;
     width: 200px;
-    filter: drop-shadow(15px 10px 5px var(--cor6));
+    filter: drop-shadow(15px 10px 5px var(--cor5));
 }
 
 /*~~~~~~~~~~ seção dos integrantes ~~~~*/
 section#carrosel {
-    background-color: var(--cor6);
+    background-color: var(--cor5);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     gap: 20px;
     padding: 15px 10px;
     font-size: 25px;
+    border-left: 10px double var(--cor3);
+    border-right: 10px double var(--cor3);
 }
 section#carrosel img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+
+.pessoa img{
+    border: 5px solid var(--cor4);
 }
 
 @media(max-width: 1300px) {
@@ -91,19 +106,24 @@ section#carrosel img{
         scroll-behavior: smooth;
     }
     #carrosel::-webkit-scrollbar {
-        height: 2px;
+        height: 4px;
     }
     #carrosel::-webkit-scrollbar-thumb {
-        background: pink;
+        background: var(--cor1);
         border-radius: 2px;
     }
     #carrosel::-webkit-scrollbar-thumb:hover{
-        background: red;
+        background: var(--cor3);
     }
 }
 @media(max-width: 800px){
+    section#carrosel {
+        font-size: 15px;
+    }
     section#carrosel img{
         height: 100px;
         width: 100px;
     }
 }
+
+/*~~~~~~~~~~~~~~*/
