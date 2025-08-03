@@ -24,6 +24,9 @@ li, a {
 a:hover {
     color: var(--cor1);
 }
+h2 {
+    text-align: center;
+}
 
 header {
     background-color: var(--cor4);
@@ -76,16 +79,33 @@ header img{
     width: 200px;
     filter: drop-shadow(15px 10px 5px var(--cor5));
 }
+/*~~~~~~~~ img fundo ~~~~~~*/
+div#img_fundo {
+    display: inline-block;
+    width: 78rem;
+    height: 300px;
+    background-color: var(--black);
+    background-image: url('../imgs/lorem.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media(max-width: 600px) {
+    div#img_fundo {
+        width: 20rem;
+        background-position: center center;
+    }
+}
 
 /*~~~~~~~~~~ seção dos integrantes ~~~~*/
 section#carrosel {
     background-color: var(--cor5);
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     padding: 15px 10px;
     font-size: 25px;
+    color: var(--withe);
     border-left: 10px double var(--cor3);
     border-right: 10px double var(--cor3);
 }
@@ -95,15 +115,13 @@ section#carrosel img{
     border-radius: 50%;
 }
 
-.pessoa img{
-    border: 5px solid var(--cor4);
-}
 
 @media(max-width: 1300px) {
     section#carrosel {
         max-width: 200%;
         overflow-x: auto;
         scroll-behavior: smooth;
+        justify-content: unset;
     }
     #carrosel::-webkit-scrollbar {
         height: 4px;
