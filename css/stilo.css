@@ -29,6 +29,7 @@ a {
     list-style: none;
     text-decoration: none;
     color: var(--withe);
+    font-family: 'goldman';
 }
 
 a:hover {
@@ -79,7 +80,7 @@ header img {
     background-color: var(--withe);
     border-radius: 5px;
     border-right: 10px double var(--cor1);
-    border-bottom: 10px groove var(--cor4);
+    border-bottom: 10px double var(--cor4);
 }
 
 /* ~~~~~~~~~~~~~ seção da empresa ~~~~~~~~~~*/
@@ -102,6 +103,7 @@ div#img_fundo {
     display: inline-block;
     width: 78rem;
     height: 300px;
+    padding: 0px;
     background-color: var(--black);
     background-image: url('../imgs/lorem.jpg');
     background-size: cover;
@@ -193,8 +195,6 @@ main#golden_maker {
 .caixa {
     border: 3px solid var(--roxo);
     border-radius: 5px;
-    width: 13rem;
-    height: 200px;
 }
 
 #logo_golden_maker img {
@@ -209,6 +209,16 @@ main#golden_maker {
     display: flex;
     justify-content: center;
     background-color: var(--cor4);
+}
+
+#ODS {
+    width: 15rem;
+    height: 10rem;
+}
+.ods_descricao img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
 #descricao_golden_maker {
@@ -236,3 +246,5 @@ h5 {
     font-family: 'Press Start 2P';
     color: var(--cor3);
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stickers.html ~~~~~~~~~~~~~~~~~~~~~~~~~*/
