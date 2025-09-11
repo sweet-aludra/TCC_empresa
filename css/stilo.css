@@ -201,7 +201,7 @@ section#carrosel img {
 
 /*~~~~~~~~~~~~~ secao golden maker ~~~~~~~*/
 section#golden_maker {
-    width: 60rem;
+    width: 62rem;
     height: 15rem;
     display: flex;
     justify-content: center;
@@ -236,6 +236,51 @@ article#descricao_golden_maker {
     padding: 0 15px;
 }
 
+/*~~~~~~~~~~~~~~~~~ area comentar ~~~~~~~~~~~~~~~~~~*/
+#area_feedback {
+    text-align: center;
+    font-size: 20px;
+}
+
+textarea {
+    max-width: 500px;
+    max-height: 100px;
+    min-width: 300px;
+    min-height: 30px;
+    width: 450px;
+    height: 50px;
+
+    border: none;
+    border-bottom: 5px solid var(--roxo);
+    border-radius: 20px 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+textarea:focus {
+    border: 2px solid var(--roxo);
+    border-bottom: 5px solid var(--roxo);
+}
+
+div#publicar_comentario input {
+    background-color: var(--cor1);
+    width: 450px;
+    height: 35px;
+    border-radius: 10px;
+    color: var(--withe);
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+div#publicar_comentario input:hover {
+    background-color: var(--roxo);
+}
+
+div#publicar_comentario input:active {
+    background-color: var(--cor4);
+}
+
 /*~~~~~~~~~~~ roda pe ~~~~~~~~~~~~~~~~~~~~*/
 footer {
     background-color: var(--cor4);
@@ -255,6 +300,10 @@ footer img {
 h5 {
     font-family: 'Press Start 2P';
     color: var(--cor3);
+}
+
+@media(max-width: 800px) {
+    footer [z]
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stickers.html ~~~~~~~~~~~~~~~~~~~~~~~~~*/
