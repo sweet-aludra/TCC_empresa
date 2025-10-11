@@ -88,6 +88,11 @@ header img {
     }
 }
 
+@media(max-width: 600px) {
+    #conteudo {
+        margin: 120px 35px 35px 35px;
+    }
+}
 /* ~~~~~~~~~~~~~ seção da empresa ~~~~~~~~~~*/
 #secao_empresa {
     display: flex;
