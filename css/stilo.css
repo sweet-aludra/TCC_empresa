@@ -289,3 +289,31 @@ video {
 .next {
     right: 10px;
 }
+
+/*~~~~~~ stikers ~~~~~~*/
+.stikers {
+  column-count: 3; /* número de colunas */
+  column-gap: 20px;
+  padding: 0 150px;
+}
+
+.item {
+  break-inside: avoid; /* impede que o item quebre entre colunas */
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  background-color: var(--cor5);
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
