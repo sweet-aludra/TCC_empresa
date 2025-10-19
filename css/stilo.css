@@ -82,17 +82,6 @@ header img {
     border-radius: 5px;
 }
 
-@media(max-width: 600px) {
-    #conteudo {
-        margin: 120px 35px 35px 35px;
-    }
-}
-
-@media(max-width: 600px) {
-    #conteudo {
-        margin: 120px 35px 35px 35px;
-    }
-}
 /* ~~~~~~~~~~~~~ seção da empresa ~~~~~~~~~~*/
 #secao_empresa {
     display: flex;
@@ -135,12 +124,6 @@ div#img_fundo {
     background-attachment: fixed;
 }
 
-@media(max-width: 1300px) {
-    div#img_fundo {
-        background-position: center center;
-    }
-}
-
 /*~~~~~~~~~~ seção dos integrantes ~~~~*/
 section#equipe_carrosel {
     background-color: var(--cor5);
@@ -169,39 +152,6 @@ section#equipe_carrosel img:hover {
 
 .pessoa h5 {
     font-size: 15px;
-}
-
-@media(max-width: 1300px) {
-    section#equipe_carrosel {
-        max-width: 200%;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        justify-content: unset;
-    }
-
-    #equipe_carrosel::-webkit-scrollbar {
-        height: 4px;
-    }
-
-    #equipe_carrosel::-webkit-scrollbar-thumb {
-        background: var(--cor1);
-        border-radius: 2px;
-    }
-
-    #equipe_carrosel::-webkit-scrollbar-thumb:hover {
-        background: var(--cor3);
-    }
-}
-
-@media(max-width: 800px) {
-    section#equipe_carrosel {
-        font-size: 15px;
-    }
-
-    section#equipe_carrosel img {
-        height: 100px;
-        width: 100px;
-    }
 }
 
 /*~~~~~~~~~~~~~ secao golden maker ~~~~~~~*/
@@ -236,8 +186,6 @@ h5 {
     font-family: 'Press Start 2P';
     color: var(--cor3);
 }
-
-@media(max-width: 800px) {}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stickers.html ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .carrosel-galeria-videos {
@@ -326,3 +274,71 @@ video {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
+
+/*~~~~~~ area de dinamismo ~~~~~~~~*/
+@media (max-width: 1200px) {
+    div#img_fundo {
+        background-position: center center;
+    }
+
+    /*~~~~ area da equipe ~~~~*/
+    section#equipe_carrosel {
+        max-width: 200%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-content: unset;
+    }
+
+    #equipe_carrosel::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    #equipe_carrosel::-webkit-scrollbar-thumb {
+        background: var(--cor1);
+        border-radius: 2px;
+    }
+
+    #equipe_carrosel::-webkit-scrollbar-thumb:hover {
+        background: var(--cor3);
+    }
+}
+
+@media (max-width: 992px) {
+    section#equipe_carrosel {
+        font-size: 15px;
+    }
+
+    section#equipe_carrosel img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    #conteudo {
+        margin: 120px 35px 35px 35px;
+    }
+
+    header img {
+        height: 200px;
+        width: 170px;
+        margin-top: 120px;
+    }
+
+    #menu {
+        font-size: 22px;
+        margin-right: 40px;
+    }
+
+    #secao_empresa p {
+        margin: 0 16px;
+        font-size: 20px;
+    }
+
+    section#golden_maker iframe{
+        height: 15rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {}
