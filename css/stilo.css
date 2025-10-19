@@ -205,7 +205,16 @@ section#equipe_carrosel img:hover {
 }
 
 /*~~~~~~~~~~~~~ secao golden maker ~~~~~~~*/
-section#golden_maker {}
+section#golden_maker {
+    display: flex;
+    justify-content: center;
+}
+section#golden_maker iframe{
+    height: 25rem;
+    width: 50rem;
+    background-color: var(--cor5); /* cor de fundo se o vídeo */
+}
+
 
 /*~~~~~~~~~~~ roda pe ~~~~~~~~~~~~~~~~~~~~*/
 footer {
