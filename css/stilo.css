@@ -267,12 +267,11 @@ video {
   width: 100%;
   border-radius: 10px;
   display: block;
-  background-color: var(--cor5);
+  background-color: #c77aa796;
 }
 
 .item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 /*~~~~~~ area de dinamismo ~~~~~~~~*/
