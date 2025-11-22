@@ -214,7 +214,7 @@ h5 {
 }
 video {
     height: 25rem;
-    width: 54rem;
+    width: 100%;
     border-radius: 10px 20px;
     object-fit: contain;
     background-color: var(--cor5); /* cor de fundo se o vídeo */
@@ -315,7 +315,6 @@ video {
     /*~~~~~~ stickers ~~~~~*/
     video {
         height: 15rem;
-        width: 25rem;
         background-color: var(--cor4); /* cor de fundo se o vídeo */
     }
     .stikers {
@@ -349,6 +348,15 @@ video {
     section#golden_maker iframe{
         height: 15rem;
         width: 100%;
+    }
+
+    .slides {
+        display: flex;
+        margin: 30px;
+        gap: 20px;
+    }
+    video {
+        height: 13rem;
     }
 }
 
