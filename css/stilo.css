@@ -172,6 +172,34 @@ section#golden_maker iframe {
     /* cor de fundo se o vídeo */
 }
 
+/* ~~~~~~~~~~~~ MVV ~~~~~~~~~~~~~~~~*/
+section#MVV {
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bloco {
+    background-color: var(--black);
+    padding: 15px;
+    width: 25rem;
+    color: var(--withe);
+    font-size: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bloco p{
+    margin: 0 20px;
+}
+
+/* Aumenta ao passar o mouse */
+.bloco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(44, 44, 44, 0.4); /* opcional: sombra mais forte no hover */
+}
+
 
 /*~~~~~~~~~~~ roda pe ~~~~~~~~~~~~~~~~~~~~*/
 footer {
@@ -352,6 +380,20 @@ video {
     section#equipe_carrosel img {
         height: 120px;
         width: 95px;
+    }
+
+    /*~~~~~~~~~ MVV ~~~~~~~~~~*/
+    .bloco {
+        background-color: var(--black);
+        padding: 15px;
+        width: 22rem;
+        color: var(--withe);
+        font-size: 20px;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .bloco p{
+        margin: 0 15px;
     }
 
     /*~~~~~~ stickers ~~~~~*/
