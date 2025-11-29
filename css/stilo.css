@@ -11,7 +11,7 @@
     --cor4: #2d0464;
     --roxo: #553199;
     --cor5: #0d002c;
-    --withe: #f1ffe7;
+    --withe: #eae8e0;
     --black: #353535;
 }
 
@@ -57,10 +57,15 @@ header {
 header img {
     height: 250px;
     width: 200px;
-    margin-top: 130px;
+    margin-top: 155px;
     position: absolute;
-    left: 50%;
     transform: translateX(-50%);
+    animation: flutuar 3s ease-in-out infinite;
+}
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
 }
 
 #menu {
@@ -107,21 +112,38 @@ h3 {
 #secao_empresa p {
     margin: 0 3rem;
     /*espaçamento ao lado*/
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /*~~~~~~~~ img fundo ~~~~~~*/
-div#img_fundo {
+div#img_fundo, div#img-fundo-goldenmaker, div#img-fundo-delirium {
     display: inline-block;
     width: 100%;
-    height: 190px;
+    height: 250px;
     padding: 0px;
     border-radius: 10px 50px 10px 50px;
     background-color: var(--black);
-    background-image: url('../imgs/lorem.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+div#img_fundo {
+    background-image: url('../imgs/lorem.jpg');
+}
+
+div#img-fundo-goldenmaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imgs/circuito_fundo.jpg');
+}
+div#img-fundo-goldenmaker img{
+    width: 150px;
+    height: 200px;
+}
+
+div#img-fundo-delirium {
+    background-image: url('../imgs/fundobb.jpeg');
 }
 
 /*~~~~~~~~~~ seção dos integrantes ~~~~*/
@@ -163,18 +185,20 @@ section#equipe_carrosel img:hover {
 section#golden_maker {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-section#golden_maker iframe {
+#video video{
     height: 25rem;
     width: 50rem;
     background-color: var(--cor5);
-    /* cor de fundo se o vídeo */
 }
 
 /* ~~~~~~~~~~~~ MVV ~~~~~~~~~~~~~~~~*/
 section#MVV {
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -199,7 +223,18 @@ section#MVV {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(44, 44, 44, 0.4); /* opcional: sombra mais forte no hover */
 }
-
+/* ~~~~~~~~~~~~~ seção dos projetos ~~~~~~~~~~*/
+#Golden-Maker, #Delirium {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 10rem;
+}
+.link-proj {
+   color: var(--black);
+}
+.link-proj:hover {
+   color: var(--cor4);
+}
 
 /*~~~~~~~~~~~ roda pe ~~~~~~~~~~~~~~~~~~~~*/
 footer {
@@ -252,6 +287,20 @@ h5 {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stickers.html ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#galeria {
+    margin: 0 auto;
+}
+.descricao-galeria {
+    text-align: center;
+    margin: 0 12rem;
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 35px 15px;
+    color: var(--withe);
+    background-color: var(--cor4);
+}
+
+/* ~~~~~~ area dos videos e imgs ~~~~~~~*/
 .carrosel-galeria-videos {
     position: relative;
     margin: 0 auto;
@@ -269,7 +318,7 @@ h5 {
 }
 
 .video {
-    flex: 0 0 54rem;
+    flex: 0 0 50rem;
     /* largura mínima */
     max-width: 100%;
     border-radius: 2px;
@@ -397,6 +446,12 @@ video {
     }
 
     /*~~~~~~ stickers ~~~~~*/
+    .descricao-galeria {
+        margin: 0 2rem;
+        font-size: 20px;
+        padding: 20px;
+    }
+
     video {
         height: 15rem;
         background-color: var(--cor4);
@@ -408,6 +463,10 @@ video {
         /* número de colunas */
         column-gap: 20px;
         padding: 0 30px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
 
@@ -432,7 +491,7 @@ video {
         font-size: 20px;
     }
 
-    section#golden_maker iframe {
+    section#golden_maker video {
         height: 15rem;
         width: 100%;
     }
