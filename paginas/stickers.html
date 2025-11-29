@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="../imgs/santinho.png"> <!--icon do site-->
     <title>Arcane Boot&reg_Stickers</title>
 </head>
+
 <body>
     <header>
         <img src="../imgs/Logo_lisas_c-removebg-preview.png" alt="Logo ArcaneBoot">
@@ -22,9 +24,18 @@
             <div class="carrosel-galeria-videos">
                 <button class="btn prev">&#10094;</button>
                 <div class="slides">
-                    <div class="video"><video src="../imgs/nintendo-v2.mp4" muted playsinline preload="metadata" controls></video><br><h4>Video curta</h4></div>
-                    <div class="video"><video src="../imgs/feteps-video.mp4" muted playsinline preload="metadata" controls></video><h4>Pitch</h4></div>
-                    <div class="video"><video src="../imgs/game-santiago.mp4" muted playsinline preload="metadata" controls></video><h4>Animação das sprites</h4></div>
+                    <div class="video"><video src="../imgs/nintendo-v2.mp4" muted playsinline preload="metadata"
+                            controls></video><br>
+                        <h4>Video curta</h4>
+                    </div>
+                    <div class="video"><video src="../imgs/feteps-video.mp4" muted playsinline preload="metadata"
+                            controls></video>
+                        <h4>Pitch</h4>
+                    </div>
+                    <div class="video"><video src="../imgs/game-santiago.mp4" muted playsinline preload="metadata"
+                            controls></video>
+                        <h4>Animação das sprites</h4>
+                    </div>
                 </div>
                 <button class="btn next">&#10095;</button>
             </div><br>
@@ -33,7 +44,8 @@
                 <div class="item"><img src="../imgs/santiago-jogo.jpeg" alt="sprites do santiago"></div>
                 <div class="item"><img src="../imgs/santiago-jogo2.jpeg" alt="sprites do santiago"></div>
                 <div class="item"><img src="../imgs/Penélope uaiv3.gif" alt="Penelope gif"></div>
-                <div class="item"><img src="../imgs/cabeca_penelope_santiago.png" alt="miniaturas de santiago e penelope"></div>
+                <div class="item"><img src="../imgs/cabeca_penelope_santiago.png"
+                        alt="miniaturas de santiago e penelope"></div>
                 <div class="item"><img src="../imgs/santinho-v2.png" alt="Santiago em pixel"></div>
                 <div class="item"><img src="../imgs/Penelope.png" alt="Penelope"></div>
                 <div class="item"><img src="../imgs/capa-ab.jpeg" alt="capa ArcaneBoot"></div>
@@ -48,9 +60,29 @@
     </main>
 
     <footer id="roda_pe">
-        <h2>ARCANE <img src="../imgs/flor1.png" alt="flor de lis"> BOOT</h2>
-        <h5>adventure stars here</h5><br>
-        <!--<p>Acompanhe nossa <a href="#"><span style="color: #a681c7; cursor: pointer;">empresa</span></a>!</p>-->
+        <div>
+            <h2>ARCANE <img src="../imgs/flor1.png" alt="flor de lis"> BOOT</h2>
+            <h5>adventure stars here</h5>
+        </div><br>
+        <div class="contatos">
+            <h2>Contatos:</h2><br>
+            <div id="contatos">
+                <div id="contatos-github">
+                    <img src="../imgs/github.png" alt="logo github">
+                    <a href="https://github.com/sweet-aludra">sweet-aludra (Adryelle)</a>
+                    <a href="https://github.com/Belanquinha">Belanquinha (Gabriel)</a>
+                    <a href="https://github.com/luiz684">luiz684 (Luiz)</a>
+                    <a href="https://github.com/WKDavi">WKDavi (Thiago)</a>
+                </div>
+                <div id="contatos-instagram">
+                    <img src="../imgs/intagram.png" alt="logo instagram">
+                    <a href="https://github.com/sweet-aludra">sweet-aludra (Adryelle)</a>
+                    <a href="https://github.com/Belanquinha">Belanquinha (Gabriel)</a>
+                    <a href="https://github.com/luiz684">luiz684 (Luiz)</a>
+                    <a href="https://github.com/WKDavi">WKDavi (Thiago)</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -114,9 +146,9 @@
                     if (i === index) {
                         v.muted = true;
                         v.playsInline = true;
-                        v.play().catch(()=>{});
+                        v.play().catch(() => { });
                     } else {
-                        try { v.pause(); } catch(e){}
+                        try { v.pause(); } catch (e) { }
                         v.currentTime = 0;
                     }
                 });
@@ -174,4 +206,5 @@
 
 
 </body>
+
 </html>
