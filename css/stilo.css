@@ -116,10 +116,10 @@ h3 {
 }
 
 /*~~~~~~~~ img fundo ~~~~~~*/
-div#img_fundo, div#img-fundo-goldenmaker, div#img-fundo-delirium {
+div#img_fundo {
     display: inline-block;
     width: 100%;
-    height: 250px;
+    height: 160px;
     border-radius: 10px 50px 10px 50px;
     background-color: var(--black);
     background-size: cover;
@@ -128,21 +128,6 @@ div#img_fundo, div#img-fundo-goldenmaker, div#img-fundo-delirium {
 }
 div#img_fundo {
     background-image: url('../imgs/lorem.jpg');
-}
-
-div#img-fundo-goldenmaker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../imgs/circuito_fundo.jpg');
-}
-div#img-fundo-goldenmaker img{
-    width: 150px;
-    height: 200px;
-}
-
-div#img-fundo-delirium {
-    background-image: url('../imgs/fundobb.jpeg');
 }
 
 /*~~~~~~~~~~ seção dos integrantes ~~~~*/
@@ -233,6 +218,41 @@ section#MVV {
 }
 .link-proj:hover {
    color: var(--cor4);
+}
+
+div#img-fundo-goldenmaker, div#img-fundo-delirium {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 50px 10px 50px;
+    background-color: var(--black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#img-fundo-goldenmaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imgs/circuito_fundo.jpg');
+}
+div#img-fundo-goldenmaker img {
+    width: 150px;
+    height: 200px;
+}
+
+div#img-fundo-delirium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imgs/fundobb.jpeg');
+}
+div#img-fundo-delirium img {
+    width: 180px;
+    height: 150px;
+    background-color: var(--withe);
+    border-radius: 40px;
 }
 
 /*~~~~~~~~~~~ roda pe ~~~~~~~~~~~~~~~~~~~~*/
@@ -512,6 +532,10 @@ video {
 }
 
 @media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+
     #menu {
         font-size: 20px;
         margin-right: 35px;
