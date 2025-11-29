@@ -120,7 +120,6 @@ div#img_fundo, div#img-fundo-goldenmaker, div#img-fundo-delirium {
     display: inline-block;
     width: 100%;
     height: 250px;
-    padding: 0px;
     border-radius: 10px 50px 10px 50px;
     background-color: var(--black);
     background-size: cover;
@@ -433,13 +432,9 @@ video {
 
     /*~~~~~~~~~ MVV ~~~~~~~~~~*/
     .bloco {
-        background-color: var(--black);
         padding: 15px;
         width: 22rem;
-        color: var(--withe);
         font-size: 20px;
-        border-radius: 15px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .bloco p{
         margin: 0 15px;
@@ -505,6 +500,37 @@ video {
     video {
         height: 13rem;
     }
+
+    /* ~~~~~~~~~~~~~ seção dos projetos ~~~~~~~~~~*/
+    #Golden-Maker, #Delirium {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    div#img-fundo-goldenmaker, div#img-fundo-delirium {
+        height: 250px;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    #menu {
+        font-size: 20px;
+        margin-right: 35px;
+    }
+
+    #conteudo {
+        margin: 100px 25px 25px 25px;
+    }
+
+    .bloco {
+        padding: 10px;
+        width: 17rem;
+        font-size: 20px;
+    }
+    .bloco p{
+        margin: 0 13px;
+    }
+
+    video {
+        height: 10rem;
+    }
+}
