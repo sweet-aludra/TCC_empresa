@@ -285,7 +285,6 @@ h5 {
 #contatos {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 
@@ -311,12 +310,12 @@ h5 {
 }
 .descricao-galeria {
     text-align: center;
-    margin: 0 12rem;
+    margin: 0 11rem;
     font-size: 25px;
-    padding: 25px;
+    padding: 20px;
     border-radius: 35px 15px;
     color: var(--withe);
-    background-color: var(--cor4);
+    background-color: var(--cor5);
 }
 
 /* ~~~~~~ area dos videos e imgs ~~~~~~~*/
