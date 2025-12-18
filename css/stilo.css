@@ -441,7 +441,7 @@ video {
 @media (max-width: 992px) {
     section#equipe_carrosel {
         font-size: 15px;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 
     section#equipe_carrosel img {
@@ -547,6 +547,10 @@ video {
 
     #secao_empresa p {
         margin: 0 10px;
+    }
+
+    .pessoa p {
+        margin: 0 20px;
     }
 
     .bloco {
