@@ -541,8 +541,12 @@ video {
     }
 
     #conteudo {
-        margin: 100px 10px 20px 10px;
-        padding: 10px;
+        margin: 100px 5px 10px 5px;
+        padding: 2px;
+    }
+
+    #secao_empresa p {
+        margin: 0 10px;
     }
 
     .bloco {
