@@ -541,7 +541,7 @@ video {
     }
 
     #conteudo {
-        margin: 100px 5px 10px 5px;
+        margin: 80px 10px 10px 10px;
         padding: 2px;
     }
 
@@ -550,7 +550,16 @@ video {
     }
 
     .pessoa p {
-        margin: 0 20px;
+        margin: 0 10px;
+    }
+
+    video {
+        margin: 0 10px;
+        height: 10rem;
+    }
+
+    section#MVV {
+        margin: 0 10px;
     }
 
     .bloco {
@@ -560,9 +569,5 @@ video {
     }
     .bloco p{
         margin: 0 13px;
-    }
-
-    video {
-        height: 10rem;
     }
 }
