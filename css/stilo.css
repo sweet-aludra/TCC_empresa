@@ -22,6 +22,7 @@
 body {
     background-color: var(--black);
     font-family: sans-serif;
+    cursor: url("../imgs/cursor.cur"), auto;
 }
 
 li,
@@ -30,6 +31,7 @@ a {
     text-decoration: none;
     color: var(--withe);
     font-family: 'goldman';
+    cursor: url("../imgs/click.cur"), pointer;
 }
 
 a:hover {
@@ -341,7 +343,6 @@ h5 {
     max-width: 100%;
     border-radius: 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
     text-align: center;
 }
 
@@ -351,6 +352,7 @@ video {
     border-radius: 10px 20px;
     object-fit: contain;
     background-color: var(--cor5);
+    cursor: url("../imgs/click.cur"), pointer;
     /* cor de fundo se o vídeo */
 }
 
@@ -364,7 +366,7 @@ video {
     border: none;
     font-size: 2rem;
     padding: 5px;
-    cursor: pointer;
+    cursor: url("../imgs/click.cur"), pointer;
     border-radius: 50%;
     z-index: 5;
 }
